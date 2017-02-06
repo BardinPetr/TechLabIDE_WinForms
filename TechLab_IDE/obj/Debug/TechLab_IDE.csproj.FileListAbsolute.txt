@@ -7,3 +7,6 @@ c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\
 c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.csproj.GenerateResource.Cache
 c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.exe
 c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.pdb
+C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLabIDE_WinForms\TechLab_IDE\bin\Debug\TechLab_IDE.exe.config
+C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLabIDE_WinForms\TechLab_IDE\obj\Debug\TechLab_IDE.exe
+C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLabIDE_WinForms\TechLab_IDE\obj\Debug\TechLab_IDE.pdb

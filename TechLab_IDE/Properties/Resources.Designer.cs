@@ -75,7 +75,7 @@ namespace TechLab_IDE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap bar_chart_24x24 {
             get {
-                object obj = ResourceManager.GetObject("bar-chart-24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("bar_chart_24x24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,19 +93,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chip_micro_24x24 {
+        internal static System.Drawing.Bitmap chipmicro_24x241 {
             get {
-                object obj = ResourceManager.GetObject("chip-micro-24x24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap chip_micro_24x241 {
-            get {
-                object obj = ResourceManager.GetObject("chip-micro-24x241", resourceCulture);
+                object obj = ResourceManager.GetObject("chipmicro_24x241", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,17 +135,7 @@ namespace TechLab_IDE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap enter_16x16 {
             get {
-                object obj = ResourceManager.GetObject("enter-16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap magnifying_glass_24x24 {
-            get {
-                object obj = ResourceManager.GetObject("magnifying_glass_24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("enter_16x16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +165,7 @@ namespace TechLab_IDE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap usb_24x24 {
             get {
-                object obj = ResourceManager.GetObject("usb-24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("usb_24x24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
