@@ -61,7 +61,6 @@
             this.port_box = new System.Windows.Forms.ComboBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.log = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -399,22 +398,12 @@
             this.webBrowser1.TabIndex = 4;
             this.webBrowser1.WebBrowserShortcutsEnabled = false;
             // 
-            // log
-            // 
-            this.log.AutoSize = true;
-            this.log.Location = new System.Drawing.Point(334, 99);
-            this.log.Name = "log";
-            this.log.Size = new System.Drawing.Size(35, 13);
-            this.log.TabIndex = 5;
-            this.log.Text = "label1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(784, 362);
-            this.Controls.Add(this.log);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -469,7 +458,6 @@
         private System.Windows.Forms.ComboBox board_box;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Label log;
     }
 }
 
