@@ -11,3 +11,4 @@ C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLabIDE_WinForms\Tech
 C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLabIDE_WinForms\TechLab_IDE\obj\Debug\TechLab_IDE.exe
 C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLabIDE_WinForms\TechLab_IDE\obj\Debug\TechLab_IDE.pdb
 C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.About.resources
+C:\Users\комп\Documents\Visual Studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.SetForm.resources
