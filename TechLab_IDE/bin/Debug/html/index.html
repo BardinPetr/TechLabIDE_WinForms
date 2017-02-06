@@ -103,7 +103,9 @@
                 Blockly.Xml.domToWorkspace(Blockly.getMainWorkspace(),
                     document.getElementById('startBlocks'));
             }
-
+function get_code(){
+return escapeCode(Blockly.Arduino.workspaceToCode());
+}
     </script>
 </body>
 </html>
