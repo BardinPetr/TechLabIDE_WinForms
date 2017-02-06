@@ -48,7 +48,7 @@ namespace TechLab_IDE
         private void savetofile(string code)
         {
             try {
-                using (StreamWriter sw = File.CreateText(curDir + "/sketch.inot"))
+                using (StreamWriter sw = File.CreateText(curDir + "/sketch/sketch.inot"))
                 {
                     sw.Write(code);
                 }
@@ -61,7 +61,7 @@ namespace TechLab_IDE
 
         private void deltempfile()
         {
-            File.Delete(curDir + "/sketch.inot");
+            File.Delete(curDir + "/sketch/sketch.inot");
         }
 
         private string getArduino()
@@ -74,16 +74,38 @@ namespace TechLab_IDE
             Debug.WriteLine(s);
         }
 
+        private string make_str(bool type)
+        {
+            string str = "";
+            try {
+                str = getArduino();
+                str += " --port " + port_box.SelectedItem.ToString();
+                str += " --board " + board_box.SelectedItem.ToString();
+                str += (type ? " --compile " : " --upload ") + curDir + "/sketch/sketch.inot";
+            }
+            catch (Exception e)
+            {
+                log(e.ToString());
+            }
+            return str;
+        }
 
         // Onclick handlers
         private void compile_btn_Click(object sender, EventArgs e)
         {
             savetofile(get_code());
+            string str = make_str(false);
+            log(str);
+            //Process p = Process.Start(str);
+            deltempfile();
         }
 
         private void load_btn_Click(object sender, EventArgs e)
         {
-
+            savetofile(get_code());
+            string str = make_str(true);
+            //Process p = Process.Start(str);
+            deltempfile();
         }
 
         private void new_btn_Click(object sender, EventArgs e)
