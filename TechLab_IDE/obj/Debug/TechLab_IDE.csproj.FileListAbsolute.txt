@@ -1,0 +1,9 @@
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\bin\Debug\TechLab_IDE.exe.config
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\bin\Debug\TechLab_IDE.exe
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\bin\Debug\TechLab_IDE.pdb
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.csprojResolveAssemblyReference.cache
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.Form1.resources
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.Properties.Resources.resources
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.csproj.GenerateResource.Cache
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.exe
+c:\users\комп\documents\visual studio 2015\Projects\TechLab_IDE\TechLab_IDE\obj\Debug\TechLab_IDE.pdb
