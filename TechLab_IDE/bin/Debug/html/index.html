@@ -106,6 +106,16 @@
 function get_code(){
 return escapeCode(Blockly.Arduino.workspaceToCode());
 }
+function get_xml(){
+var xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
+var data = Blockly.Xml.domToText(xml);
+return data;
+}
+function set_xml(data){
+resetWorkspace();
+var xml = Blockly.Xml.textToDom(data);
+Blockly.Xml.domToWorkspace(Blockly.getMainWorkspace(),xml);
+}
     </script>
 </body>
 </html>
