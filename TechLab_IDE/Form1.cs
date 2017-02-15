@@ -33,7 +33,8 @@ namespace TechLab_IDE
             {
                 port_box.Items.Add(port);
             }
-            port_box.SelectedIndex = 0;
+            if (port_box.Items.Count > 0)
+                port_box.SelectedIndex = 0;
             board_box.SelectedItem = "arduino:avr:nano:cpu=atmega328";
         }
 
