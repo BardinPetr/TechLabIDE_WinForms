@@ -63,9 +63,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arrow_right_alt1_24x24 {
+        internal static System.Drawing.Bitmap check_code {
             get {
-                object obj = ResourceManager.GetObject("arrow_right_alt1_24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("check_code", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bar_chart_24x24 {
+        internal static System.Drawing.Bitmap controller {
             get {
-                object obj = ResourceManager.GetObject("bar_chart_24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("controller", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap check_alt_24x24 {
+        internal static System.Drawing.Bitmap delete {
             get {
-                object obj = ResourceManager.GetObject("check_alt_24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chipmicro_24x241 {
+        internal static System.Drawing.Bitmap done_1 {
             get {
-                object obj = ResourceManager.GetObject("chipmicro_24x241", resourceCulture);
+                object obj = ResourceManager.GetObject("done_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cog_24x24 {
+        internal static System.Drawing.Bitmap file {
             get {
-                object obj = ResourceManager.GetObject("cog_24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("file", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap document_alt_stroke_18x24 {
+        internal static System.Drawing.Bitmap folder {
             get {
-                object obj = ResourceManager.GetObject("document_alt_stroke_18x24", resourceCulture);
+                object obj = ResourceManager.GetObject("folder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap download_18x24 {
+        internal static System.Drawing.Bitmap folder_plus {
             get {
-                object obj = ResourceManager.GetObject("download_18x24", resourceCulture);
+                object obj = ResourceManager.GetObject("folder_plus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap enter_16x16 {
+        internal static System.Drawing.Bitmap memory_m {
             get {
-                object obj = ResourceManager.GetObject("enter_16x16", resourceCulture);
+                object obj = ResourceManager.GetObject("memory_m", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap magnifying_glass_24x241 {
+        internal static System.Drawing.Bitmap power_plug {
             get {
-                object obj = ResourceManager.GetObject("magnifying_glass_24x241", resourceCulture);
+                object obj = ResourceManager.GetObject("power_plug", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap upload_18x24 {
+        internal static System.Drawing.Bitmap power_plug_off {
             get {
-                object obj = ResourceManager.GetObject("upload_18x24", resourceCulture);
+                object obj = ResourceManager.GetObject("power_plug_off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,79 @@ namespace TechLab_IDE.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap usb_24x24 {
+        internal static System.Drawing.Bitmap run {
             get {
-                object obj = ResourceManager.GetObject("usb_24x24", resourceCulture);
+                object obj = ResourceManager.GetObject("run", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_ino {
+            get {
+                object obj = ResourceManager.GetObject("save_ino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_tlab {
+            get {
+                object obj = ResourceManager.GetObject("save_tlab", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings {
+            get {
+                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap terminal {
+            get {
+                object obj = ResourceManager.GetObject("terminal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap upload_code {
+            get {
+                object obj = ResourceManager.GetObject("upload_code", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usb {
+            get {
+                object obj = ResourceManager.GetObject("usb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usb_m {
+            get {
+                object obj = ResourceManager.GetObject("usb_m", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
