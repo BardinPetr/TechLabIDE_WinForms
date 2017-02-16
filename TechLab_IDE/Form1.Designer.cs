@@ -48,6 +48,17 @@
             this.siteItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.port_box = new System.Windows.Forms.ComboBox();
+            this.board_box = new System.Windows.Forms.ComboBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.savecode_btn = new System.Windows.Forms.Button();
             this.term_btn = new System.Windows.Forms.Button();
             this.set_btn = new System.Windows.Forms.Button();
             this.save_btn = new System.Windows.Forms.Button();
@@ -55,17 +66,6 @@
             this.new_btn = new System.Windows.Forms.Button();
             this.load_btn = new System.Windows.Forms.Button();
             this.compile_btn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.port_box = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.board_box = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.savecode_btn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -233,107 +233,8 @@
             this.panel2.Controls.Add(this.compile_btn);
             this.panel2.Location = new System.Drawing.Point(3, 26);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(780, 59);
+            this.panel2.Size = new System.Drawing.Size(780, 76);
             this.panel2.TabIndex = 2;
-            // 
-            // term_btn
-            // 
-            this.term_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.term_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.term_btn.Image = global::TechLab_IDE.Properties.Resources.magnifying_glass_24x241;
-            this.term_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.term_btn.Location = new System.Drawing.Point(707, 3);
-            this.term_btn.Name = "term_btn";
-            this.term_btn.Size = new System.Drawing.Size(70, 50);
-            this.term_btn.TabIndex = 6;
-            this.term_btn.Text = "Терминал";
-            this.term_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.term_btn.UseVisualStyleBackColor = true;
-            this.term_btn.Click += new System.EventHandler(this.term_btn_Click);
-            // 
-            // set_btn
-            // 
-            this.set_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.set_btn.Image = global::TechLab_IDE.Properties.Resources.cog_24x24;
-            this.set_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.set_btn.Location = new System.Drawing.Point(526, 3);
-            this.set_btn.Name = "set_btn";
-            this.set_btn.Size = new System.Drawing.Size(70, 50);
-            this.set_btn.TabIndex = 5;
-            this.set_btn.Text = "Настройка";
-            this.set_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.set_btn.UseVisualStyleBackColor = true;
-            this.set_btn.Click += new System.EventHandler(this.set_btn_Click);
-            // 
-            // save_btn
-            // 
-            this.save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.save_btn.Image = global::TechLab_IDE.Properties.Resources.download_18x24;
-            this.save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.save_btn.Location = new System.Drawing.Point(327, 3);
-            this.save_btn.Name = "save_btn";
-            this.save_btn.Size = new System.Drawing.Size(70, 50);
-            this.save_btn.TabIndex = 4;
-            this.save_btn.Text = "Сохранить";
-            this.save_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.save_btn.UseVisualStyleBackColor = true;
-            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
-            // 
-            // open_btn
-            // 
-            this.open_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.open_btn.Image = global::TechLab_IDE.Properties.Resources.upload_18x24;
-            this.open_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.open_btn.Location = new System.Drawing.Point(251, 3);
-            this.open_btn.Name = "open_btn";
-            this.open_btn.Size = new System.Drawing.Size(70, 50);
-            this.open_btn.TabIndex = 3;
-            this.open_btn.Text = "Открыть";
-            this.open_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.open_btn.UseVisualStyleBackColor = true;
-            this.open_btn.Click += new System.EventHandler(this.open_btn_Click);
-            // 
-            // new_btn
-            // 
-            this.new_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.new_btn.Image = global::TechLab_IDE.Properties.Resources.document_alt_stroke_18x24;
-            this.new_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.new_btn.Location = new System.Drawing.Point(165, 3);
-            this.new_btn.Name = "new_btn";
-            this.new_btn.Size = new System.Drawing.Size(70, 50);
-            this.new_btn.TabIndex = 2;
-            this.new_btn.Text = "Новый";
-            this.new_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.new_btn.UseVisualStyleBackColor = true;
-            this.new_btn.Click += new System.EventHandler(this.new_btn_Click);
-            // 
-            // load_btn
-            // 
-            this.load_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.load_btn.Image = global::TechLab_IDE.Properties.Resources.arrow_right_alt1_24x24;
-            this.load_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.load_btn.Location = new System.Drawing.Point(79, 3);
-            this.load_btn.Name = "load_btn";
-            this.load_btn.Size = new System.Drawing.Size(70, 50);
-            this.load_btn.TabIndex = 1;
-            this.load_btn.Text = "Загрузить";
-            this.load_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.load_btn.UseVisualStyleBackColor = true;
-            this.load_btn.Click += new System.EventHandler(this.load_btn_Click);
-            // 
-            // compile_btn
-            // 
-            this.compile_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.compile_btn.Image = global::TechLab_IDE.Properties.Resources.check_alt_24x24;
-            this.compile_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.compile_btn.Location = new System.Drawing.Point(3, 3);
-            this.compile_btn.Name = "compile_btn";
-            this.compile_btn.Size = new System.Drawing.Size(70, 50);
-            this.compile_btn.TabIndex = 0;
-            this.compile_btn.Text = "Контроль";
-            this.compile_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.compile_btn.UseVisualStyleBackColor = true;
-            this.compile_btn.Click += new System.EventHandler(this.compile_btn_Click);
             // 
             // panel1
             // 
@@ -342,7 +243,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.board_box);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 85);
+            this.panel1.Location = new System.Drawing.Point(3, 105);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(325, 33);
             this.panel1.TabIndex = 3;
@@ -355,15 +256,6 @@
             this.port_box.Size = new System.Drawing.Size(121, 21);
             this.port_box.TabIndex = 3;
             this.port_box.Text = "Set com port here";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TechLab_IDE.Properties.Resources.usb_24x24;
-            this.pictureBox2.Location = new System.Drawing.Point(167, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // board_box
             // 
@@ -378,27 +270,18 @@
             this.board_box.TabIndex = 1;
             this.board_box.Text = "arduino:avr:uno";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TechLab_IDE.Properties.Resources.chipmicro_24x241;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // webBrowser1
             // 
             this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(6, 124);
+            this.webBrowser1.Location = new System.Drawing.Point(6, 144);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.ScrollBarsEnabled = false;
-            this.webBrowser1.Size = new System.Drawing.Size(774, 235);
+            this.webBrowser1.Size = new System.Drawing.Size(774, 271);
             this.webBrowser1.TabIndex = 4;
             this.webBrowser1.WebBrowserShortcutsEnabled = false;
             // 
@@ -406,7 +289,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 133);
+            this.label1.Location = new System.Drawing.Point(12, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 26);
             this.label1.TabIndex = 5;
@@ -417,7 +300,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 159);
+            this.label2.Location = new System.Drawing.Point(12, 175);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 18);
             this.label2.TabIndex = 6;
@@ -429,35 +312,152 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(626, 129);
+            this.button2.Location = new System.Drawing.Point(626, 152);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 221);
+            this.button2.Size = new System.Drawing.Size(146, 265);
             this.button2.TabIndex = 7;
             this.button2.Text = "OK";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TechLab_IDE.Properties.Resources.usb_m;
+            this.pictureBox2.Location = new System.Drawing.Point(167, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TechLab_IDE.Properties.Resources.memory_m;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // savecode_btn
             // 
             this.savecode_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.savecode_btn.Image = global::TechLab_IDE.Properties.Resources.download_18x24;
+            this.savecode_btn.Image = global::TechLab_IDE.Properties.Resources.save_ino;
             this.savecode_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.savecode_btn.Location = new System.Drawing.Point(403, 3);
+            this.savecode_btn.Location = new System.Drawing.Point(416, 3);
             this.savecode_btn.Name = "savecode_btn";
-            this.savecode_btn.Size = new System.Drawing.Size(89, 50);
+            this.savecode_btn.Size = new System.Drawing.Size(89, 70);
             this.savecode_btn.TabIndex = 8;
             this.savecode_btn.Text = "Сохранить код";
             this.savecode_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.savecode_btn.UseVisualStyleBackColor = true;
             this.savecode_btn.Click += new System.EventHandler(this.save_codeItem_Click);
             // 
+            // term_btn
+            // 
+            this.term_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.term_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.term_btn.Image = global::TechLab_IDE.Properties.Resources.terminal;
+            this.term_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.term_btn.Location = new System.Drawing.Point(707, 3);
+            this.term_btn.Name = "term_btn";
+            this.term_btn.Size = new System.Drawing.Size(70, 70);
+            this.term_btn.TabIndex = 6;
+            this.term_btn.Text = "Терминал";
+            this.term_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.term_btn.UseVisualStyleBackColor = true;
+            this.term_btn.Click += new System.EventHandler(this.term_btn_Click);
+            // 
+            // set_btn
+            // 
+            this.set_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.set_btn.Image = global::TechLab_IDE.Properties.Resources.settings;
+            this.set_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.set_btn.Location = new System.Drawing.Point(526, 3);
+            this.set_btn.Name = "set_btn";
+            this.set_btn.Size = new System.Drawing.Size(70, 70);
+            this.set_btn.TabIndex = 5;
+            this.set_btn.Text = "Настройка";
+            this.set_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.set_btn.UseVisualStyleBackColor = true;
+            this.set_btn.Click += new System.EventHandler(this.set_btn_Click);
+            // 
+            // save_btn
+            // 
+            this.save_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.save_btn.Image = global::TechLab_IDE.Properties.Resources.save_tlab;
+            this.save_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.save_btn.Location = new System.Drawing.Point(327, 3);
+            this.save_btn.Name = "save_btn";
+            this.save_btn.Size = new System.Drawing.Size(70, 70);
+            this.save_btn.TabIndex = 4;
+            this.save_btn.Text = "Сохранить";
+            this.save_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.save_btn.UseVisualStyleBackColor = true;
+            this.save_btn.Click += new System.EventHandler(this.save_btn_Click);
+            // 
+            // open_btn
+            // 
+            this.open_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.open_btn.Image = global::TechLab_IDE.Properties.Resources.folder;
+            this.open_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.open_btn.Location = new System.Drawing.Point(251, 3);
+            this.open_btn.Name = "open_btn";
+            this.open_btn.Size = new System.Drawing.Size(70, 70);
+            this.open_btn.TabIndex = 3;
+            this.open_btn.Text = "Открыть";
+            this.open_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.open_btn.UseVisualStyleBackColor = true;
+            this.open_btn.Click += new System.EventHandler(this.open_btn_Click);
+            // 
+            // new_btn
+            // 
+            this.new_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.new_btn.Image = global::TechLab_IDE.Properties.Resources.file;
+            this.new_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.new_btn.Location = new System.Drawing.Point(165, 3);
+            this.new_btn.Name = "new_btn";
+            this.new_btn.Size = new System.Drawing.Size(70, 70);
+            this.new_btn.TabIndex = 2;
+            this.new_btn.Text = "Новый";
+            this.new_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.new_btn.UseVisualStyleBackColor = true;
+            this.new_btn.Click += new System.EventHandler(this.new_btn_Click);
+            // 
+            // load_btn
+            // 
+            this.load_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.load_btn.Image = global::TechLab_IDE.Properties.Resources.upload_code;
+            this.load_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.load_btn.Location = new System.Drawing.Point(79, 3);
+            this.load_btn.Name = "load_btn";
+            this.load_btn.Size = new System.Drawing.Size(70, 70);
+            this.load_btn.TabIndex = 1;
+            this.load_btn.Text = "Загрузить";
+            this.load_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.load_btn.UseVisualStyleBackColor = true;
+            this.load_btn.Click += new System.EventHandler(this.load_btn_Click);
+            // 
+            // compile_btn
+            // 
+            this.compile_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.compile_btn.Image = global::TechLab_IDE.Properties.Resources.check_code;
+            this.compile_btn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.compile_btn.Location = new System.Drawing.Point(3, 3);
+            this.compile_btn.Name = "compile_btn";
+            this.compile_btn.Size = new System.Drawing.Size(70, 70);
+            this.compile_btn.TabIndex = 0;
+            this.compile_btn.Text = "Контроль";
+            this.compile_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.compile_btn.UseVisualStyleBackColor = true;
+            this.compile_btn.Click += new System.EventHandler(this.compile_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(784, 362);
+            this.ClientSize = new System.Drawing.Size(784, 418);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

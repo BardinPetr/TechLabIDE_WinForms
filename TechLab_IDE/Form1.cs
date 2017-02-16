@@ -16,7 +16,7 @@ namespace TechLab_IDE
 {
     public partial class Form1 : Form
     {
-        string curDir = System.IO.Directory.GetCurrentDirectory();
+        string curDir = Directory.GetCurrentDirectory();
         public Form1()
         {
             InitializeComponent();
@@ -28,20 +28,32 @@ namespace TechLab_IDE
         //Utils
         private void scan()
         {
-            string[] ports = SerialPort.GetPortNames();
-            foreach (string port in ports)
+            try
             {
-                port_box.Items.Add(port);
+                string[] ports = SerialPort.GetPortNames();
+                foreach (string port in ports)
+                {
+                    port_box.Items.Add(port);
+                }
+                if (port_box.Items.Count > 0)
+                    port_box.SelectedIndex = 0;
+                board_box.SelectedItem = "arduino:avr:nano:cpu=atmega328";
+            } catch(Exception e)
+            {
+
             }
-            if (port_box.Items.Count > 0)
-                port_box.SelectedIndex = 0;
-            board_box.SelectedItem = "arduino:avr:nano:cpu=atmega328";
         }
 
         private void load_playground()
         {
-            this.webBrowser1.Url = new Uri(
-                String.Format("file:///{0}/html/index.html", curDir)); //Load playground
+            try
+            {
+                this.webBrowser1.Url = new Uri(
+                    String.Format("file:///{0}/html/index.html", curDir)); //Load playground
+            } catch(Exception e)
+            {
+                log("Playground error: " + e.ToString());
+            }
         }
 
         private string get_code()
