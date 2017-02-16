@@ -132,6 +132,87 @@
   <ItemGroup>
     <None Include="icons\usb-24x24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_plug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_plug_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_ino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_tlab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\arrow_right_alt1_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\bar-chart-24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\check_alt_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\document_alt_stroke_18x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\download_18x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\magnifying_glass_24x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\upload_18x241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory_m1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb_m1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
