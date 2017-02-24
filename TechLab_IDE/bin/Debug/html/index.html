@@ -43,6 +43,7 @@
 
             $('.blocklySvg, #blockly').height('100%');
             $('.blocklySvg').width('100%');
+            $('.blocklySvg, background-color')
 
             var colors = [
                 "",
@@ -91,6 +92,7 @@
                 Blockly.fireUiEvent(window, "resize");
             }
 
+
             function escapeCode(code) {
                 var str = code;
                 str = str.replace(/</g, "&lt;");
@@ -117,5 +119,7 @@ var xml = Blockly.Xml.textToDom(data);
 Blockly.Xml.domToWorkspace(Blockly.getMainWorkspace(),xml);
 }
     </script>
+
+    <button id="test" onclick="console.log($('test').css('background-color'))">TEST</button>
 </body>
 </html>
