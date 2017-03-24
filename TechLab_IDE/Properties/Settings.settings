@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="arduino_path" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:/Program Files (x86)/Arduino/arduino_debug.exe</Value>
+      <Value Profile="(Default)">C:\Users\Petr\Downloads\arduino-1.6.8-windows\arduino-1.6.8/arduino_debug.exe</Value>
     </Setting>
     <Setting Name="theme" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>

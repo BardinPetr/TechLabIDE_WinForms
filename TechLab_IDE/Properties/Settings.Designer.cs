@@ -25,7 +25,7 @@ namespace TechLab_IDE.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:/Program Files (x86)/Arduino/arduino_debug.exe")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Petr\\Downloads\\arduino-1.6.8-windows\\arduino-1.6.8/arduino_debug.exe")]
         public string arduino_path {
             get {
                 return ((string)(this["arduino_path"]));

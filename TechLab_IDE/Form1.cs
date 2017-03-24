@@ -125,7 +125,7 @@ namespace TechLab_IDE
                 str = ""; 
                 str += " --port " + port_box.SelectedItem.ToString();
                 str += " --board " + board_box.SelectedItem.ToString();
-                str += (!type ? " --verify " : " --upload ") + "\\sketch\\sketch.ino";
+                str += (!type ? " --verify " : " --upload ") + " \\sketch\\sketch.ino";
             }
             catch (Exception e)
             {
@@ -150,7 +150,7 @@ namespace TechLab_IDE
                 Process process = new Process();
 
                 process.StartInfo.FileName = getArduino();
-                process.StartInfo.Arguments = make_str(type);
+                process.StartInfo.Arguments = make_str(type);// + " --pref build.path=" + curDir + "\\sketch";
                 process.StartInfo.RedirectStandardError = true;
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.UseShellExecute = false;
@@ -161,30 +161,31 @@ namespace TechLab_IDE
                     {
                         string str = ex.Data;
                         if (str != null) {
-                            if (!str.StartsWith("Invalid") && !str.StartsWith("Board")){
+                            if (!str.StartsWith("Invalid") && !str.StartsWith("Invalid") && !str.StartsWith("Неверная") && !str.StartsWith("Игнорировать") && !str.StartsWith("Имена") && !str.StartsWith("("))
+                            {
                                 log(str);
                                 setLabel(str + '\n');
                             }
                         }
                     }
                 );
-                process.ErrorDataReceived += new DataReceivedEventHandler((s, ex) => { Debug.WriteLine(ex.Data); });
+                process.ErrorDataReceived += new DataReceivedEventHandler((s, ex) => { Debug.WriteLine(ex.Data); return; });
 
                 process.Start();
                 process.BeginOutputReadLine();
                 process.WaitForExit();
             } catch (Exception e)
             {
-                log("Error while arduino: " + e.ToString());
-                label2.Text += "Error while arduino";
+                log("Error while arduino:   " + e.ToString());
+                label2.Text += "Error while arduino\n";
 
                 button2.Visible = true;
 
                 return;
             }
 
-            log("Arduino was finished sucessfully");
-            label2.Text += "Arduino was finished sucessfully";
+            log("Arduino was finished sucessfully\n");
+            label2.Text += "Arduino was finished sucessfully\n";
 
             button2.Visible = true;
         }
