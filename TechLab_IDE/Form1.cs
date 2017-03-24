@@ -282,7 +282,9 @@ namespace TechLab_IDE
 
         private void term_btn_Click(object sender, EventArgs e)
         {
-
+            Terminal form = new Terminal();
+            form.setport(port_box.SelectedItem.ToString());
+            form.ShowDialog();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

@@ -48,16 +48,6 @@
             this.siteItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.port_box = new System.Windows.Forms.ComboBox();
-            this.board_box = new System.Windows.Forms.ComboBox();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.savecode_btn = new System.Windows.Forms.Button();
             this.term_btn = new System.Windows.Forms.Button();
             this.set_btn = new System.Windows.Forms.Button();
@@ -66,6 +56,16 @@
             this.new_btn = new System.Windows.Forms.Button();
             this.load_btn = new System.Windows.Forms.Button();
             this.compile_btn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.port_box = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.board_box = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -236,109 +236,6 @@
             this.panel2.Size = new System.Drawing.Size(780, 76);
             this.panel2.TabIndex = 2;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.port_box);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.board_box);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 105);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(325, 33);
-            this.panel1.TabIndex = 3;
-            // 
-            // port_box
-            // 
-            this.port_box.FormattingEnabled = true;
-            this.port_box.Location = new System.Drawing.Point(197, 6);
-            this.port_box.Name = "port_box";
-            this.port_box.Size = new System.Drawing.Size(121, 21);
-            this.port_box.TabIndex = 3;
-            this.port_box.Text = "Set com port here";
-            // 
-            // board_box
-            // 
-            this.board_box.FormattingEnabled = true;
-            this.board_box.Items.AddRange(new object[] {
-            "arduino:avr:uno",
-            "arduino:avr:nano:cpu=atmega328",
-            "arduino:avr:mega"});
-            this.board_box.Location = new System.Drawing.Point(35, 6);
-            this.board_box.Name = "board_box";
-            this.board_box.Size = new System.Drawing.Size(121, 21);
-            this.board_box.TabIndex = 1;
-            this.board_box.Text = "arduino:avr:uno";
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser1.Location = new System.Drawing.Point(6, 144);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.ScrollBarsEnabled = false;
-            this.webBrowser1.Size = new System.Drawing.Size(774, 271);
-            this.webBrowser1.TabIndex = 4;
-            this.webBrowser1.WebBrowserShortcutsEnabled = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 149);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 26);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Please wait";
-            this.label1.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 175);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 18);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Output data";
-            this.label2.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(626, 152);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 265);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "OK";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TechLab_IDE.Properties.Resources.usb_m;
-            this.pictureBox2.Location = new System.Drawing.Point(167, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::TechLab_IDE.Properties.Resources.memory_m;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // savecode_btn
             // 
             this.savecode_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -451,6 +348,109 @@
             this.compile_btn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.compile_btn.UseVisualStyleBackColor = true;
             this.compile_btn.Click += new System.EventHandler(this.compile_btn_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.port_box);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.board_box);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(3, 105);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(325, 33);
+            this.panel1.TabIndex = 3;
+            // 
+            // port_box
+            // 
+            this.port_box.FormattingEnabled = true;
+            this.port_box.Location = new System.Drawing.Point(197, 6);
+            this.port_box.Name = "port_box";
+            this.port_box.Size = new System.Drawing.Size(121, 21);
+            this.port_box.TabIndex = 3;
+            this.port_box.Text = "Set com port here";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TechLab_IDE.Properties.Resources.usb_m;
+            this.pictureBox2.Location = new System.Drawing.Point(167, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // board_box
+            // 
+            this.board_box.FormattingEnabled = true;
+            this.board_box.Items.AddRange(new object[] {
+            "arduino:avr:uno",
+            "arduino:avr:nano:cpu=atmega328",
+            "arduino:avr:mega"});
+            this.board_box.Location = new System.Drawing.Point(35, 6);
+            this.board_box.Name = "board_box";
+            this.board_box.Size = new System.Drawing.Size(121, 21);
+            this.board_box.TabIndex = 1;
+            this.board_box.Text = "arduino:avr:uno";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TechLab_IDE.Properties.Resources.memory_m;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webBrowser1.IsWebBrowserContextMenuEnabled = false;
+            this.webBrowser1.Location = new System.Drawing.Point(6, 144);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.ScrollBarsEnabled = false;
+            this.webBrowser1.Size = new System.Drawing.Size(774, 271);
+            this.webBrowser1.TabIndex = 4;
+            this.webBrowser1.WebBrowserShortcutsEnabled = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 149);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(234, 26);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Собираем программу";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Viner Hand ITC", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 175);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 26);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Output";
+            this.label2.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(626, 152);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(146, 265);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "OK";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
